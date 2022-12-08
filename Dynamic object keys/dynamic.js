@@ -23,5 +23,20 @@ const app = {
 [appState]: true
 }
 app[keyName]='computers';
-console.log(app)
+console.log(app);
 
+const state ={
+    loading:true,
+    job: '',
+    name: ''
+}
+function updateState(key, value){
+    state[key]=value
+}
+updateState('job', 'developer');
+updateState('name', 'fuji');
+updateState('loading', false );
+
+updateState('name', 'cash');
+updateState('job', 'data analyst');
+console.log(state);
