@@ -19,11 +19,12 @@ const people = [
 //returns a new array
 //does not change the size of original array
 //uses values from original array when making one
-const getAges = person => person.age *2;
-
+// const ages = people.map((person) => person.age * 2);
+// console.log(ages);
+const getAges = person => person.age * 2;
 const ages = people.map(getAges)
 console.log(ages);
-// //construct the object instead of a single data; below
+//construct the object instead of a single data; below
 const newPeople = people.map((item)=>{
     return{
         firstName: item.name.toUpperCase(),
